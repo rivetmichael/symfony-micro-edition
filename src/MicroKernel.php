@@ -7,8 +7,12 @@
  * file that was distributed with this source code.
  */
 
+namespace MichaelR\SfMicro;
+
 use Symfony\Bundle\DebugBundle\DebugBundle;
+use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
+use Symfony\Bundle\TwigBundle\TwigBundle;
 use Symfony\Bundle\WebProfilerBundle\WebProfilerBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -26,8 +30,8 @@ class MicroKernel extends Kernel
     public function registerBundles()
     {
         $bundles = [
-            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Symfony\Bundle\TwigBundle\TwigBundle(),
+            new FrameworkBundle(),
+            new TwigBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {

@@ -1,0 +1,18 @@
+language: php
+
+sudo: false
+
+cache:
+    directories:
+        - $HOME/.composer/cache
+
+matrix:
+    include:
+        - php: 7.0
+        - php: 7.1
+
+install:
+    - composer --prefer-dist install
+
+script:
+    - composer run-test
