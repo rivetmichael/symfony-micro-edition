@@ -1,0 +1,13 @@
+{
+    "name": "rivetmichael/micro-edition",
+    "description": "A Slack command app built with Symfony micro kernel",
+    "authors": [
+        {
+            "name": "Michael Rivet",
+            "email": "rivet.michael@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "^3.1"
+    }
+}
