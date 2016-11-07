@@ -1,5 +1,6 @@
 {
     "name": "rivetmichael/micro-edition",
+    "license": "GPL-3.0",
     "description": "A Slack command app built with Symfony micro kernel",
     "authors": [
         {
@@ -18,9 +19,13 @@
         }
     },
     "require": {
+        "php": ">= 7",
         "symfony/symfony": "^3.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0"
+    },
+    "scripts": {
+        "run-test": "vendor/bin/phpunit"
     }
 }
